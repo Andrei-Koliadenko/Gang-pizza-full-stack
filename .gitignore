@@ -64,7 +64,7 @@ target/
 hs_err_pid*
 
 # dependencies
-/node_modules
+/client/node_modules
 /.pnp
 .pnp.js
 
@@ -72,10 +72,10 @@ hs_err_pid*
 /coverage
 
 # production
-/build
+/client/build
 
 # outdated components
-/UNUSED
+/client/UNUSED
 
 # misc
 .DS_Store
