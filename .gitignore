@@ -74,6 +74,9 @@ hs_err_pid*
 # production
 /build
 
+# outdated components
+/UNUSED
+
 # misc
 .DS_Store
 .env.local
