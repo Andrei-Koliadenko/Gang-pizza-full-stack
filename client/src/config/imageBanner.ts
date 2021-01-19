@@ -1,0 +1,5 @@
+export const pizzaBanner1 = "https://s8.hostingkartinok.com/uploads/images/2020/10/62fe1125dab8c975709f0db977cee2bd.jpg"
+export const pizzaBanner2 = "https://s8.hostingkartinok.com/uploads/images/2020/10/efc7f9df76cc1129db889770c7ad1af0.jpg"
+export const pizzaBanner3 = "https://s8.hostingkartinok.com/uploads/images/2020/10/4f2d35e53d6109df3eed7ccd6aaa6b81.jpg"
+export const pizzaBanner4 = "https://s8.hostingkartinok.com/uploads/images/2020/10/8650d1510ce2b58fe4cb1d84b544b9ec.jpg"
+export const pizzaBanner5 = "https://s8.hostingkartinok.com/uploads/images/2020/10/e723ef06b0dfc338d1e9f2a32bbbb018.jpg"
