@@ -1,8 +1,6 @@
 import Food from "../../models/food/Food";
 import ProductListService from "./ProductListService";
 import FoodType from "../../models/food/FoodType";
-import {products} from "../../config/products";
-import DrinkSize from "../../models/food/DrinkSize";
 
 export default class ProductListServiceMapImpl implements ProductListService {
     private productList: Map<number, Food>

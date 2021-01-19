@@ -26,7 +26,6 @@ import firebase from "firebase";
 import logo from "../../util/images/logo/logo92.png";
 import appFirebase from "../../config/firebase-sdk";
 import toBase64 from "../../util/toBase64";
-import {products} from "../../config/products";
 import {useSelector} from "react-redux";
 import {ReducersType} from "../../store/store";
 
