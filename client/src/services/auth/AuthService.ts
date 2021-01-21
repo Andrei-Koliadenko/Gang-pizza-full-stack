@@ -6,8 +6,10 @@ export interface LoginData {
     password: string
 }
 export interface UserData {
-    user: string;
+    email: string;
+    displayName: string;
     isAdmin: boolean;
+    avatarURL: string;
 }
 export default interface AuthService {
     login(loginData: LoginData): Promise<LoginCodes>;

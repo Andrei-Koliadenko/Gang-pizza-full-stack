@@ -26,7 +26,7 @@ export const orderListReducer = (orderList: Order[] = [], action: ActionType): O
     action.type === SET_ORDER_LIST ? action.payload.slice(0) : orderList;
 
 export const userDataReducer =
-    (userData: UserData = {isAdmin: false, user: ''}, action: { type: string, payload: any }): UserData =>
+    (userData: UserData = {isAdmin: false, email: '', displayName: '', avatarURL: ''}, action: { type: string, payload: any }): UserData =>
         action.type === SET_USER_DATA ? {...action.payload as UserData} : userData;
 
 export const shoppingCartCounterReducer = (counter: number = 0, action: ActionType): number => {

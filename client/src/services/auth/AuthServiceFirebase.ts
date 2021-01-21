@@ -18,10 +18,11 @@ export default class AuthServiceFirebase implements AuthService {
                 if (user && user.email) {
                     return docData(appFirebase.firestore().collection(this.adminCollection)
                         .doc(user.email)).pipe(map(admin => {
-                        return {user: user.email as string, isAdmin: !!admin && !!(admin as any).uid}
+                        return {email: user.email as string, isAdmin: !!admin && !!(admin as any).uid,
+                            avatarURL: user.photoURL as string, displayName: user.displayName as string}
                     }))
                 }
-                return of({user: '', isAdmin: false})
+                return of({email: '', isAdmin: false, displayName: '', avatarURL: ''})
             }))
     }
 
