@@ -1,10 +1,6 @@
 import React, {Fragment} from "react";
 import Grid from "@material-ui/core/Grid";
 import FoodCard from "../cards/Card";
-import ShoppingCard from "../cards/ShoppingCard";
-import Food from "../../models/food/Food";
-import {useSelector} from "react-redux";
-import {ReducersType} from "../../store/store";
 import {serviceProductList} from "../../config/server-config";
 
 

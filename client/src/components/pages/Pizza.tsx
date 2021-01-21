@@ -1,10 +1,7 @@
 import React, {Fragment} from "react";
 import FoodCard from "../cards/Card";
 import {Grid} from "@material-ui/core";
-import ShoppingCard from "../cards/ShoppingCard";
 import {serviceProductList} from "../../config/server-config";
-import {ReducersType} from "../../store/store";
-import {useSelector} from "react-redux";
 import Food from "../../models/food/Food";
 
 const Pizza: React.FC = () => {

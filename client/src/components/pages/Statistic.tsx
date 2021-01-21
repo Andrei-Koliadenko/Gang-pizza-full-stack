@@ -1,8 +1,11 @@
-import React from "react";
+import React, {Fragment} from "react";
+import {Typography} from "@material-ui/core";
 
 const Statistic: React.FC = () => {
-    return <React.Fragment>
-        <h2>Orders statistic here</h2>
-    </React.Fragment>
+    return <Fragment>
+        <Typography variant="h3" component="h2" gutterBottom>
+            Page currently in development
+        </Typography>
+    </Fragment>
 }
 export default Statistic;

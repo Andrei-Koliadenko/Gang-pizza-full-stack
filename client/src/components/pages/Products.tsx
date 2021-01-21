@@ -22,12 +22,7 @@ import Snackbar from "@material-ui/core/Snackbar";
 import DrinkSize from "../../models/food/DrinkSize";
 import {serviceProductList} from "../../config/server-config";
 import {replacer} from "../../util/mapFunctions";
-import firebase from "firebase";
-import logo from "../../util/images/logo/logo92.png";
-import appFirebase from "../../config/firebase-sdk";
 import toBase64 from "../../util/toBase64";
-import {useSelector} from "react-redux";
-import {ReducersType} from "../../store/store";
 
 const useStyles = makeStyles((theme: Theme) =>
     createStyles({
@@ -144,9 +139,10 @@ const Products: React.FC = () => {
                 <div>
                     {/*<Fab color="primary" aria-label="add" onClick={() => setAddProductFlag(true)}>*/}
                     <Fab color="primary" aria-label="add" onClick={() => {
-                        setAddProductFlag(true)}
+                        setAddProductFlag(true)
+                    }
                     }>
-                    {/*    <Fab color="primary" aria-label="add" onClick={() => products.forEach(product=>serviceProductList.addProduct(product))}>*/}
+                        {/*    <Fab color="primary" aria-label="add" onClick={() => products.forEach(product=>serviceProductList.addProduct(product))}>*/}
                         <Add/>
                     </Fab>
                 </div>
