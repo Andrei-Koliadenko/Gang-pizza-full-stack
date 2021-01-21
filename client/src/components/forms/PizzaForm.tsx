@@ -36,26 +36,10 @@ const DESCRIPTION = "\"Description\"";
 const PRICE = "\"Price\"";
 
 const useStyles = makeStyles((theme: Theme) =>
-
     createStyles({
-        root: {
-            width: '100%',
-            '& > * + *': {
-                marginTop: theme.spacing(2),
-            },
-            '& > *': {
-                margin: theme.spacing(1),
-            },
-        },
-        button: {
-            margin: theme.spacing(2),
-        },
         formControl: {
             margin: theme.spacing(1),
             minWidth: 140,
-        },
-        selectEmpty: {
-            marginTop: theme.spacing(2),
         },
         textField: {
             marginLeft: theme.spacing(1),
@@ -65,9 +49,6 @@ const useStyles = makeStyles((theme: Theme) =>
             marginLeft: theme.spacing(1),
             marginRight: theme.spacing(1),
             maxWidth: 250,
-        },
-        input: {
-            display: 'none',
         },
     }),
 );
@@ -127,7 +108,7 @@ const PizzaForm: FC<Props> = (props: Props) => {
                 <FormGroup>
                     <FormControlLabel
                         control={<Checkbox checked={isHot} inputRef={register} onChange={handleChangeCheckBox}
-                                           name="isHot"/>}
+                                           name="isHot" color="primary"/>}
                         label="Hot"/>
                 </FormGroup>
             </FormControl>
@@ -135,7 +116,7 @@ const PizzaForm: FC<Props> = (props: Props) => {
                 <FormGroup>
                     <FormControlLabel
                         control={<Checkbox checked={isVegan} inputRef={register} onChange={handleChangeCheckBox}
-                                           name="isVegan"/>}
+                                           name="isVegan" color="primary"/>}
                         label="Vegetarian"/>
                 </FormGroup>
             </FormControl>

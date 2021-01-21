@@ -11,7 +11,6 @@ import {
 import {yupResolver} from "@hookform/resolvers/yup";
 import TextField from "@material-ui/core/TextField";
 import Button from "@material-ui/core/Button";
-import {PhotoCamera} from "@material-ui/icons";
 import FormControl from "@material-ui/core/FormControl";
 import FormGroup from "@material-ui/core/FormGroup";
 import FormControlLabel from "@material-ui/core/FormControlLabel";
@@ -35,26 +34,10 @@ const DESCRIPTION = "\"Description\"";
 const PRICE = "\"Price\"";
 
 const useStyles = makeStyles((theme: Theme) =>
-
     createStyles({
-        root: {
-            width: '100%',
-            '& > * + *': {
-                marginTop: theme.spacing(2),
-            },
-            '& > *': {
-                margin: theme.spacing(1),
-            },
-        },
-        button: {
-            margin: theme.spacing(2),
-        },
         formControl: {
             margin: theme.spacing(1),
             minWidth: 140,
-        },
-        selectEmpty: {
-            marginTop: theme.spacing(2),
         },
         textField: {
             marginLeft: theme.spacing(1),
@@ -64,9 +47,6 @@ const useStyles = makeStyles((theme: Theme) =>
             marginLeft: theme.spacing(1),
             marginRight: theme.spacing(1),
             maxWidth: 250,
-        },
-        input: {
-            display: 'none',
         },
     }),
 );
@@ -121,7 +101,7 @@ const DrinkForm: FC<Props> = (props: Props) => {
                 <FormGroup>
                     <FormControlLabel
                         control={<Checkbox checked={isHot} onChange={() => setIsHot(!isHot)}
-                                           name="isHot"/>} inputRef={register}
+                                           color="primary" name="isHot"/>} inputRef={register}
                         label="Hot"
                     />
                 </FormGroup>

@@ -53,25 +53,6 @@ const APARTMENT = "\"Apartment\"";
 const useStyles = makeStyles((theme: Theme) =>
 
     createStyles({
-        root: {
-            width: '100%',
-            '& > * + *': {
-                marginTop: theme.spacing(2),
-            },
-            '& > *': {
-                margin: theme.spacing(1),
-            },
-        },
-        button: {
-            margin: theme.spacing(2),
-        },
-        formControl: {
-            margin: theme.spacing(1),
-            minWidth: 140,
-        },
-        selectEmpty: {
-            marginTop: theme.spacing(2),
-        },
         textField: {
             marginLeft: theme.spacing(1),
             marginRight: theme.spacing(1),
@@ -80,9 +61,6 @@ const useStyles = makeStyles((theme: Theme) =>
             marginLeft: theme.spacing(1),
             marginRight: theme.spacing(1),
             maxWidth: 250,
-        },
-        input: {
-            display: 'none',
         },
         modal: {
             display: 'flex',
@@ -189,7 +167,7 @@ const OrderForm: FC = () => {
                 extraInformation: orderFormInput.extraInformation,
                 orderContent: getOrderFood(),
                 totalPrice: sumGlobal,
-                clientEmail: userData.user,
+                clientEmail: userData.email,
             })
             deliveryTime = orderDeliveryTime.slice(11, 16);
             dispatch(setClientOrdersList(new Map<string, number>()))
@@ -258,8 +236,8 @@ const OrderForm: FC = () => {
             >
                 <Fade in={openModal}>
                     <div className={classes.paper}>
-                        <Typography variant="subtitle1" display="inline">
-                            Thank you for your order!
+                        <Typography variant="subtitle1" component={'span'} display="inline">
+                            Thank you for your order! We have already started preparing your order!
                         </Typography>
                         <br/>
                         <Button variant="contained" color="primary" onClick={handleModalClose}>
