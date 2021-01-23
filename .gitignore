@@ -84,6 +84,9 @@ hs_err_pid*
 .env.test.local
 .env.production.local
 
+package-lock.json
+.eslintcache
+
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
